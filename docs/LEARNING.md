@@ -47,3 +47,8 @@ Rule: **reproduce → isolate the layer → read the real error → change one t
 | Date | Phase.step | Topic | What I learned (in my own words) | What broke and how I fixed it |
 |---|---|---|---|---|
 | 2026-10-05 | −1 | Architecture | Adapters feed one canonical model, so IFC, PDF and RVT share the viewer, chat and navigation | — |
+| 2026-10-12 | 0.1 | uv | Installed globally with winget, like pnpm; each project's dependencies live in its own `.venv`, like `node_modules` (`pyproject.toml` ≈ `package.json`, `uv.lock` ≈ `pnpm-lock.yaml`) | — |
+| 2026-10-12 | 0.1 | Python | `uv python install 3.12` gave 3.12.15 alongside two existing 3.13 installs; the project pins 3.12 with `.python-version`, so uv picks the right one regardless of PATH | — |
+| 2026-10-14 | 0.1 | WSL 2 + Docker | Windows Home has no Hyper-V, so Docker Desktop runs its Linux engine inside WSL 2; `docker version` shows a Windows **Client** talking to a Linux **Server**. Docker brings its own internal distro and doesn't need Ubuntu | Ubuntu's first launch failed with `Wsl/Service/E_UNEXPECTED` right after `wsl --install`; WSL features only activate after a restart, and Ubuntu was optional anyway, so I installed Docker Desktop directly |
+| 2026-10-14 | 0.1 | Image vs container | `docker run hello-world`: the daemon pulled an **image** (a read-only template) from Docker Hub, created a **container** (a running instance of it), and streamed its output back to the CLI | — |
+| 2026-10-14 | 0.1 | Node LTS | Upgraded Node 22 → 24.20 LTS; even-numbered Node versions become LTS, and 22 is now maintenance-only | — |

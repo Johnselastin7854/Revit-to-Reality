@@ -41,7 +41,7 @@ The learning topics for each phase are in [LEARNING.md](LEARNING.md). Update thi
 Full plan: [phases/phase-0-foundations.md](phases/phase-0-foundations.md)
 
 - [x] 0.0 Project docs and Claude Code setup (README, AGENTS.md, CLAUDE.md, skills, agents)
-- [ ] 0.1 Tools installed and verified
+- [x] 0.1 Tools installed and verified
 - [ ] 0.2 Git + GitHub workflow
 - [ ] 0.3 Monorepo skeleton (pnpm + Turborepo)
 - [ ] 0.4 Code quality tooling (TS + Python)

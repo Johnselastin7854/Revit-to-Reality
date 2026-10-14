@@ -80,7 +80,7 @@ Fill these in as Phase 0 creates them. Until then, they do not exist.
 - Branches: `phase-N/short-name`, `fix/short-name`.
 - Every PR fills in the template, including "What I learned".
 - Jobs must be idempotent; heavy work never runs inside an HTTP request.
-- Shell: the owner is on Windows 11 with PowerShell and Git Bash. Use `docker compose` (v2), not `docker-compose`.
+- Shell: the owner is on Windows 11 with PowerShell and Git Bash. Use `docker compose` (with a space, built into Docker), not the retired `docker-compose`.
 
 ## Domain glossary
 
